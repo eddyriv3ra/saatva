@@ -16,4 +16,12 @@
     background-color: $color-main;
     color: $color-primary;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }

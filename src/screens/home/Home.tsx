@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StarRatings from "react-star-ratings";
 import Button from "components/button";
 import Header from "components/header";
 import styles from "./home.module.scss";
@@ -62,9 +63,16 @@ const Home = () => {
               );
             })}
           </div>
-          <div className={styles.label}>
-            <p className={styles.info}>{selectedItem.name}</p>
+          <div className={styles.info}>
+            <p className={styles.name}>{selectedItem.name}</p>
             <p className={styles.price}>{`$${selectedItem.price}`}</p>
+          </div>
+          <div className={styles.starRatings}>
+            <StarRatings
+              rating={selectedItem.reviewRating}
+              starDimension="40px"
+              starSpacing="15px"
+            />
           </div>
           <div className={styles.addToCartButton}>
             <Button status="primary" onClick={handleAddToCart}>

@@ -10,7 +10,7 @@
   margin-bottom: 1rem;
 }
 
-.info {
+.name {
   font-size: 1.5rem;
 }
 
@@ -43,7 +43,7 @@
   display: flex;
 }
 
-.label {
+.info {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
@@ -51,4 +51,9 @@
 
 .addToCartButton {
   margin-top: 6rem;
+}
+
+.starRatings {
+  display: flex;
+  justify-content: center;
 }
