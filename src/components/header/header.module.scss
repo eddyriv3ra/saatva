@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0 8rem;
 }
 
 .brand {
@@ -17,4 +17,19 @@
 .image {
   width: 4rem;
   height: 4rem;
+}
+
+.notification {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: $color-notification;
+  position: absolute;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: $color-primary;
+  font-size: 1.5rem;
+  font-weight: bold;
 }

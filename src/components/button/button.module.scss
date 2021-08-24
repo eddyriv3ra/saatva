@@ -1,0 +1,19 @@
+@import "styles/abstracts/_variables";
+
+.button {
+  height: 4rem;
+  width: 100%;
+  color: $color-main;
+  background-color: $color-primary;
+  border: 1px solid $color-main;
+
+  &__primary {
+    background-color: $color-quartery;
+    color: $color-primary;
+  }
+
+  &__selected {
+    background-color: $color-main;
+    color: $color-primary;
+  }
+}
