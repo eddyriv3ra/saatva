@@ -1,4 +1,3 @@
-import React from "react";
 import { Mattress } from "interfaces";
 import StarRatings from "react-star-ratings";
 import styles from "./section.module.scss";
