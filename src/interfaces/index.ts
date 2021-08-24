@@ -1,4 +1,4 @@
-export interface Matrress {
+export interface Mattress {
   id: number;
   name: string;
   price: number;
