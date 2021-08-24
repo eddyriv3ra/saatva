@@ -7,6 +7,7 @@ const data = [
     price: 999,
     reviewRating: 4.9,
     image: classic,
+    units: 0,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const data = [
     price: 1299,
     reviewRating: 4.0,
     image: loom,
+    units: 0,
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ const data = [
     price: 1599,
     reviewRating: 4.5,
     image: zem,
+    units: 0,
   },
 ];
 

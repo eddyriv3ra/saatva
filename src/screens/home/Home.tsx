@@ -8,7 +8,7 @@ import { Matrress } from "interfaces";
 
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState<Matrress>(data[0]);
-  const [cartItems, setCartItems] = useState<any>([]);
+  const [cartItems, setCartItems] = useState<Matrress[]>([]);
 
   const handleSelectClick = (id: number) => {
     const item =
@@ -32,7 +32,7 @@ const Home = () => {
 
   const getNumberOfCartItems = () =>
     cartItems.reduce(
-      (acc: number, currentValue: any) => acc + currentValue.units,
+      (acc: number, currentValue: Matrress) => acc + currentValue.units,
       0
     );
 
@@ -51,7 +51,7 @@ const Home = () => {
           <h2 className={styles.title}>Choose Your Mattress</h2>
           <h3 className={styles.mattressType}>SELECT MATTRESS TYPE</h3>
           <div className={styles.buttonsContainer}>
-            {data.map((mattress: any) => {
+            {data.map((mattress: Matrress) => {
               return (
                 <Button
                   key={mattress.id}

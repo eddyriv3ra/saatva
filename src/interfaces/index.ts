@@ -4,5 +4,5 @@ export interface Matrress {
   price: number;
   reviewRating: number;
   image: string;
-  units?: number;
+  units: number;
 }

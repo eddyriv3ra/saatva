@@ -41,6 +41,11 @@
 
 .buttonsContainer {
   display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
 }
 
 .info {
@@ -51,9 +56,37 @@
 
 .addToCartButton {
   margin-top: 6rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
 }
 
 .starRatings {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectionContainer {
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .section {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sectionContainer {
+    margin: 2rem 2rem;
+  }
 }
